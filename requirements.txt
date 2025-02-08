@@ -1,0 +1,13 @@
+aiohttp
+annoy
+matplotlib
+numpy
+pandas
+pytest
+PyYAML
+sentence_transformers
+setuptools
+tiktoken
+tqdm
+vec2text
+plotly

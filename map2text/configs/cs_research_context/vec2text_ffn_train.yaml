@@ -1,0 +1,19 @@
+# Train an FFN to invert 2-dim embeddings to high-dim embeddings.
+# Usage: python map2text/model/trainable_ffn/train.py map2text/configs/cs_research_context/vec2text_ffn_train.yaml
+# The stored weight can then be used by map2text/configs/cs_research_context/vec2text_ffn_inference.yaml
+# Note: We did not report the results of this method in our paper as the results are comparable to unweighted interpolation.
+type: training
+save_path: models/cs_research_context
+data:
+  path: data/context.npz
+model_kwargs:
+  dim_in: 2
+  hidden_dim: 2048
+  dim_out: 1536
+train_kwargs:
+  num_epochs: 10
+  train_prop: 0.8
+  batch_size: 32
+  lr: 0.001
+  beta1: 0.9
+  beta2: 0.999

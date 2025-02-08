@@ -1,0 +1,3 @@
+[submodule "map2text/external/largevis"]
+	path = map2text/external/largevis
+	url = git@github.com:lferry007/LargeVis.git
