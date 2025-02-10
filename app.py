@@ -117,10 +117,10 @@ def load_generator(generator_type, dataset_name, data):
 
     project_root = Path(__file__).parent
     generation_configs = {
+        "1st-order RAG (CoT)": "gpt4o_fs_cot.yaml",
         "1st-order RAG": "gpt4o_zs.yaml",
         "1st-order RAG (few-shot)": "gpt4o_fs.yaml",
         "2nd-order RAG (few-shot)": "gpt4o_fs_rag.yaml",
-        "1st-order RAG (CoT)": "gpt4o_fs_cot.yaml",
     }
     config_file = (
         project_root
