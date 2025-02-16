@@ -212,10 +212,10 @@ with col1:
         generator_type = st.selectbox(
             "Select generation method",
             [
+                "1st-order RAG (CoT)",
                 "1st-order RAG",
                 "1st-order RAG (few-shot)",
                 "2nd-order RAG (few-shot)",
-                "1st-order RAG (CoT)",
             ],
         )
 
