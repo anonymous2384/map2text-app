@@ -289,7 +289,7 @@ if st.session_state.marked_coords:
             mode="markers",
             marker=dict(size=10, color="rgb(255, 75, 75)", opacity=0.9, symbol="star"),
             hovertemplate="%{text}<extra></extra>",
-            text=[rewrap_br(st.session_state.generated_text)],
+            text=[rewrap_br(st.session_state.generated_text, width=50)],
             hoverlabel=dict(bgcolor="white"),
         )
     )
